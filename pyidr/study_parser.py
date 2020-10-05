@@ -303,28 +303,29 @@ class Formatter(object):
     PUBLICATION_PAIRS = [
         ('Publication Title', "%(Title)s"),
         ('Publication Authors', "%(Author List)s"),
-        ('PubMed ID', "%(PubMed ID)s "
-         "https://www.ncbi.nlm.nih.gov/pubmed/%(PubMed ID)s"),
-        ('PMC ID',
-         "%(PMC ID)s https://www.ncbi.nlm.nih.gov/pmc/articles/%(PMC ID)s"),
-        ('Publication DOI', "%(DOI)s https://doi.org/%(DOI)s"),
+        ('Publication DOI', "%(DOI)s"),
+        ("Publication DOI URL", "https://doi.org/%(DOI)s"),
+        ('PubMed ID', "%(PubMed ID)s"),
+        ('PubMed ID URL', "https://www.ncbi.nlm.nih.gov/pubmed/%(PubMed ID)s"),
+        ('PMC ID', "%(PMC ID)s"),
+        ('PMC ID URL', "https://www.ncbi.nlm.nih.gov/pmc/articles/%(PMC ID)s"),
     ]
     BOTTOM_PAIRS = [
         ('Release Date', '%(Study Public Release Date)s'),
-        ('License', "%(Study License)s %(Study License URL)s"),
+        ('License', "%(Study License)s"),
+        ("License URL", "%(Study License URL)s"),
         ('Copyright', "%(Study Copyright)s"),
         ('Data Publisher', "%(Study Data Publisher)s"),
-        ('Data DOI', "%(Data DOI)s "
-         "https://doi.org/%(Data DOI)s"),
+        ('Data DOI', "%(Data DOI)s"),
+        ("Data DOI URL", "https://doi.org/%(Data DOI)s"),
         ('External URL', "%(Study External URL)s"),
-        ('BioStudies Accession', "%(Study BioImage Archive Accession)s"
-         " https://www.ebi.ac.uk/biostudies/studies/"
+        ('BioStudies Accession', "%(Study BioImage Archive Accession)s")
+        ('BioStudies Accession URL',
+         "https://www.ebi.ac.uk/biostudies/studies/"
          "%(Study BioImage Archive Accession)s"),
-        ('BioStudies Accession', "%(Study BioStudies Accession)s"
-         " https://www.ebi.ac.uk/biostudies/studies/"
-         "%(Study BioStudies Accession)s"),
-        ('EMPIAR Accession', "%(Study EMPIAR Accession)s"
-         " https://dx.doi.org/10.6019/%(Study EMPIAR Accession)s"),
+        ('EMPIAR Accession', "%(Study EMPIAR Accession)s")
+        ('EMPIAR Accession URL',
+         "https://doi.org/10.6019/%(Study EMPIAR Accession)s"),
     ]
     ANNOTATION_PAIRS = [('Annotation File', "%(Annotation File)s")]
 
